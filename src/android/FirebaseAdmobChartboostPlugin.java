@@ -1,20 +1,15 @@
-package com.jernung.plugins.admob.chartboost;
+package com.jernung.plugins.firebase.admob.chartboost;
 
-import android.util.Log;
-
-import com.chartboost.sdk.CBLocation;
 import com.chartboost.sdk.Chartboost;
 import com.chartboost.sdk.Libraries.CBLogging.Level;
 
+import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaWebView;
 
-import org.json.JSONArray;
-import org.json.JSONException;
+public class FirebaseAdmobChartboostPlugin extends CordovaPlugin {
 
-public class AdmobChartboostPlugin extends CordovaPlugin {
-
-    private static final String PLUGIN_NAME = "AdmobChartboostPlugin";
+    private static final String PLUGIN_NAME = "FirebaseAdmobChartboostPlugin";
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
